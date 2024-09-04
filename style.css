@@ -1,0 +1,128 @@
+/* Reseta margens e paddings de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral da página */
+html {
+    scroll-behavior: smooth; /* Habilita rolagem suave */
+    font-family: 'Poppins', sans-serif; /* Fonte padrão */
+}
+
+/* Evita rolagem horizontal */
+body {
+    overflow-x: hidden;
+}
+
+/* Estilo do cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    height: 50px;
+    background-color: lightgrey;
+    z-index: 999;
+}
+
+/* Estilo da navegação no cabeçalho */
+ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 6px;
+}
+p{
+    font-size: 1.6rem;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+h1{
+    padding-left: 10px;
+}
+
+/* Estilo dos links */
+a {
+    color: #333; /* Cor de texto padrão */
+    opacity: 0.8;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+
+a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Estilo para seções de perfil */
+.perfil01, .perfil02, .tecno {
+    padding-top: 50px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/* Estilo da seção de contato */
+.contactDiv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.leftContact, .rightContact {
+    background-color: #ffffff;
+    width: 600px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    padding: 20px;
+}
+/* Adiciona padding superior ao conteúdo principal para evitar sobreposição do cabeçalho */
+.main-content {
+    padding-top: 60px; /* Ajuste conforme a altura do cabeçalho */
+}
+
+
+/* Estilo para a imagem circular */
+.rel {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Estilo da imagem dentro da seção circular */
+.img01 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+    transition: all 200ms linear;
+}
+
+.img01:hover {
+    transform: scale(1.2);
+    transition: all 400ms linear;
+}
